@@ -1,5 +1,3 @@
-import exp from "constants"
-
 // ====== USER PARAMS
 export type CreateUserParams = {
   clerkId: string
@@ -148,31 +146,4 @@ export type RemoveUrlQueryParams = {
 export type SearchParamProps = {
   params: { id: string }
   searchParams: { [key: string]: string | string[] | undefined }
-}
-
-// ====== STOCK PARAMS
-export type Stock = {
-  _id: string
-  symbol: string
-  name: string
-  closingPrice: number
-  highPrice: number
-  lowPrice: number
-  openPrice: number
-  previousClose: number
-  change: number
-  changePercent: number
-  volume: number
-  avgVolume: number
-  marketCap: number
-  peRatio: number
-  week52High: number
-  week52Low: number
-  ytdChange: number
-
-  exchange: string
-  industry: string
-  website: string
-  description: string
-  CEO: string
 }
